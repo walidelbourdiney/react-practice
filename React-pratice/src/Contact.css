@@ -1,0 +1,27 @@
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  color: white;
+}
+.contact-card > img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 200px;
+  align-self: center;
+}
+.contact-card > h3 {
+  align-self: center;
+  font-size: 2rem;
+}
+.info-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.info-group img {
+  width: 20px;
+  height: 20px;
+}

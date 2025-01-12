@@ -4,7 +4,7 @@ function Header() {
   return (
     <div className="header">
       <img src="./src/assets/react.svg" alt="Logo" />
-      <p>Hello there!</p>
+      <p>My Travel Journal!</p>
     </div>
   );
 }
