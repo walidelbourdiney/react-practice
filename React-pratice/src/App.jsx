@@ -1,19 +1,32 @@
-import "./App.css";
-import "./ContactContainer";
-import ContactContainer from "./ContactContainer";
-import Header from "./Header";
+import React from "react";
 
-function App() {
-  const x = ["ali", "ahmed", "ezzat"];
-  const y = x.map((name) => <h1>{name}</h1>);
-  console.log(y);
+export default function App() {
+  const [myFavoriteThings, setMyFavoriteThings] = React.useState([]);
+
+  const allFavoriteThings = [
+    "💦🌹",
+    "😺",
+    "💡🫖",
+    "🔥🧤",
+    "🟤🎁",
+    "🐴",
+    "🍎🥧",
+    "🚪🔔",
+    "🛷🔔",
+    "🥩🍝",
+  ];
+  const thingsElements = myFavoriteThings.map((thing) => (
+    <p key={thing}>{thing}</p>
+  ));
+
+  function addFavoriteThing() {
+    setMyFavoriteThings((prev) => [...prev, allFavoriteThings[prev.length]]);
+  }
+
   return (
-    <>
-      {y}
-      <Header />
-      <ContactContainer />
-    </>
+    <main>
+      <button onClick={addFavoriteThing}>Add item</button>
+      <section aria-live="polite">{thingsElements}</section>
+    </main>
   );
 }
-
-export default App;
