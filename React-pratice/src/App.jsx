@@ -29,5 +29,4 @@ export default function App() {
       <section aria-live="polite">{thingsElements}</section>
     </main>
   );
-  adad;
 }
