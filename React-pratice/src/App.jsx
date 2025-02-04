@@ -14,6 +14,16 @@ export default function App() {
     "🚪🔔",
     "🛷🔔",
     "🥩🍝",
+    "💦🌹",
+    "😺",
+    "💡🫖",
+    "🔥🧤",
+    "🟤🎁",
+    "🐴",
+    "🍎🥧",
+    "🚪🔔",
+    "🛷🔔",
+    "🥩🍝",
   ];
   const thingsElements = myFavoriteThings.map((thing) => (
     <p key={thing}>{thing}</p>
